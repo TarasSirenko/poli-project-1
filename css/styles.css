@@ -52,6 +52,9 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.carrent-page {
+  color: var(--accent-color);
+}
 /* ------------------------heder------------------------ */
 .navigation__list {
   display: flex;
@@ -183,6 +186,9 @@ p {
   background-repeat: no-repeat;
   background-position: 970px 2px, right top, right top, right top;
 }
+.hero-container {
+  padding: 0px;
+}
 .hero-title {
   margin-bottom: 10px;
   width: 580px;
@@ -228,7 +234,8 @@ p {
   color: var(--white);
   transition: box-shadow 250ms linear;
   text-transform: uppercase;
-  padding: 18px 54px;
+  width: 270px;
+  height: 60px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -378,6 +385,8 @@ p {
   color: var(--text-color);
 }
 .button {
+  margin: 0 auto;
+  display: block;
   cursor: pointer;
   width: 347px;
   padding: 16px 20px;
@@ -543,9 +552,6 @@ p {
   display: block;
   padding: 57px 75px;
   outline: 1px solid rgba(230, 230, 230, 0.5);
-}
-.clients-button {
-  margin: 0 auto;
 }
 .clients {
   text-align: center;
@@ -771,7 +777,7 @@ p {
 .about-current {
   background-color: var(--white);
 }
-.container--about-current {
+.container__page {
   padding-top: 26px;
 }
 .about__overhead {
@@ -869,4 +875,124 @@ p {
   line-height: 1.4;
   color: var(--title-color);
 }
+.articles__item--team {
+  margin-bottom: 0px;
+}
 /* -------------------------end team----------------------- */
+
+/* ------------------------- second page----------------------- */
+
+/* -------------------------clients  page----------------------- */
+.article__text-wraper--clients {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 27px 20px 29px 20px;
+}
+
+.button-clients {
+  padding: 8px;
+  margin: 0px;
+  width: 151px;
+  height: 38px;
+  font-size: 16px;
+}
+
+/* -------------------------end clients  page----------------------- */
+
+/* -------------------------clients  page----------------------- */
+
+.container-form--contacts {
+  width: 590px;
+  padding: 30px;
+  margin-top: 50px;
+}
+.question-form--contacts {
+  width: 100%;
+}
+.question-form__input--contacts {
+  width: 255px;
+}
+.contacts__link {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  color: var(--title-color);
+}
+.contacts__wraper {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__container {
+  background-image: url(../images/jpg/contacts-men.png),
+    radial-gradient(
+      circle at bottom 100px left 450px,
+      rgba(22, 199, 228, 0.3) 0%,
+      rgba(22, 199, 228, 0) 40%
+    );
+  background-repeat: no-repeat;
+  background-position: 200px 200px, bottom center;
+  padding-top: 26px;
+  padding-bottom: 214px;
+}
+.contacts__addres {
+  margin-bottom: 36px;
+}
+.social-list__title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.4;
+  color: var(--title-color);
+  margin-bottom: 12px;
+}
+.social-list__link--contacts {
+  width: 54px;
+  height: 54px;
+}
+.social-list__item--contacts:not(:last-child) {
+  margin-right: 12px;
+}
+.footer-contacts__icon--contacts {
+  margin-right: 15px;
+}
+.articles__item--gallery:nth-child(n + 6) {
+  margin-bottom: 0px;
+}
+/* -------------------------end clients  page----------------------- */
+
+/* -------------------------carrent-page----------------------- */
+.carrent-page {
+  color: var(--accent-color);
+}
+/* -------------------------carrent-page----------------------- */
+
+/* -------------------------business-coaching-page---------------------- */
+.hero__button-wraper {
+  display: flex;
+  justify-content: space-between;
+  width: 560px;
+}
+
+/* -------------------------designation---------------------- */
+.designation__wraper-text {
+  padding-right: 65px;
+}
+.designation__text-accent {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: black;
+}
+.designation__text {
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--text-color);
+  margin-bottom: 35px;
+}
