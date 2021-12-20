@@ -10,6 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script defer src="/examples/libs/chief-slider/chief-slider.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slider = new ChiefSlider('.slider', {
+        loop: false
+      });
+    });
+  </script>
     <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -201,7 +209,6 @@
                         </div>
                         <button type="submit" class="button button-form">Получить консультацию</button>
                     </form>
-                    <img src="./images/jpg/form-men.png" alt="" width="591" height="462" class="container-form__img">
                 </div>
             </div>
         </section>
@@ -304,7 +311,13 @@
                 </div>
                 
                 <div class="reviews__bottom-wraper">
-                    <div class="reviews__left"></div>
+                    <div class="reviews__left">
+                        <button type="button" class="button__video">
+                            <svg class="video__icon" width=22px height=22px>
+                                <use href="./images/sprite.svg#icon-play" class="video__icon--icon"></use>
+                            </svg>
+                        </button>
+                    </div>
                     <div class="reviews__right">
                         <h3 class="reviews__title">Пётр Ковтун</h3>
                         <p class="reviews__text">Руководитель компании Opti Taxi.</p>
@@ -451,6 +464,7 @@
             </div>
         </div>
     </footer>
+    
     <!-- ФУТЕР-->
 </body>
 </html>
